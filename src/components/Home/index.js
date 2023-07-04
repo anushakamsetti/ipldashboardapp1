@@ -47,7 +47,7 @@ class Home extends Component {
     return (
       <div className="app-container">
         <div className="ipl-container">
-          <div className="heading-container">
+          <div className="header-container">
             <img
               className="ipl-logo"
               src="https://assets.ccbp.in/frontend/react-js/ipl-logo-img.png"

@@ -3,7 +3,7 @@ import {Component} from 'react'
 
 class LatestMatch extends Component {
   render() {
-    const {LatestMatch} = this.props
+    const {latestMatch} = this.props
     const {
       competingTeam,
       competingTeamLogo,
@@ -14,12 +14,12 @@ class LatestMatch extends Component {
       umpires,
       venue,
       result,
-    } = LatestMatch
+    } = latestMatch
     return (
       <div className="latest-match-card-container">
         <h1 className="latest-match-heading">Latest Match</h1>
         <div className="latest-match-card">
-          <div className="Latest-match-logo-container">
+          <div className="latest-match-logo-container">
             <div className="latest-match-details-main">
               <p className="latest-match-team-name">{competingTeam}</p>
               <p className="latest-match-date">{date}</p>

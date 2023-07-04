@@ -54,8 +54,8 @@ class TeamMatches extends Component {
     }
 
     renderTeamMatches =() => {
-        const {matchesDate} = this.state
-        const {teamBannerUrl, latestMatchDetails} = matchesDate
+        const {matchesData} = this.state
+        const {teamBannerUrl, latestMatchDetails} = matchesData
         return (
             <div className="team-matches-container">
                <img src={teamBannerUrl} alt="team banner" className="team-banner" />
@@ -66,8 +66,8 @@ class TeamMatches extends Component {
     }
 
     renderRecentMatchesList = () => {
-        const {matchesDate} = this.state 
-        const (recentMatches) = matchesDate
+        const {matchesData} = this.state 
+        const (recentMatches) = matchesData
         return (
             <ul className="recent-matches-list">
                {recentMatches.map(eachMatch => (
@@ -90,7 +90,6 @@ class TeamMatches extends Component {
         return (
             <div className={`app-team-matches-container ${id}`}>
              {isLoading ? this.renderLoader() : this.renderTeamMatches()}
-
             </div>
         )
     }
